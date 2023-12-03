@@ -16,7 +16,7 @@ case $1 in
         if [ -f ~/.cache/current_wallpaper.jpg ]; then
             wal -q -i ~/.cache/current_wallpaper.jpg
         else
-            wal -q -i ~/wallpaper/
+            wal -q -i ~/wallpaper/cyber.jpg
         fi
     ;;
 

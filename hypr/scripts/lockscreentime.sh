@@ -9,7 +9,7 @@
 # by Stephan Raabe (2023) 
 # ----------------------------------------------------- 
 
-timeswaylock=600
+timeswaylock=900
 timeoff=660
 
 if [ -f "/usr/bin/swayidle" ]; then
