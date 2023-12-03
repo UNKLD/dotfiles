@@ -28,12 +28,12 @@ function get_brightness {
 
 case $1 in
 i)  # increase the backlight by 5%
-    brightnessctl set +3%
+    brightnessctl set +5%
     send_notification ;;
 d)  # decrease the backlight by 5%
-    if [[ $(get_brightness) -lt 6 ]] ; then
+    if [[ $(get_brightness) -lt 4 ]] ; then
         # avoid 0% brightness
-        brightnessctl set 1%
+        brightnessctl set 1
     else
         # decrease the backlight by 5%
         brightnessctl set 3%-

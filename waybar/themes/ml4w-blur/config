@@ -55,8 +55,8 @@
         "group/hardware",
         "custom/cliphist",
         "network",
-        "custom/exit",
-        "clock"
+        "clock",
+        "custom/exit"
     ],
 
     // Group Quicklinks
