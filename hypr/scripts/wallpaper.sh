@@ -13,11 +13,7 @@ case $1 in
 
     # Load wallpaper from .cache of last session 
     "init")
-        if [ -f ~/.cache/current_wallpaper.jpg ]; then
-            wal -q -i ~/.cache/current_wallpaper.jpg
-        else
-            wal -q -i ~/wallpaper/cyber.jpg
-        fi
+            wal -q -i ~/wallpaper/default.jpg
     ;;
 
     # Select wallpaper with rofi

@@ -44,7 +44,11 @@ Wall_Change()
                 nextIndex=$(( (i + 1) % ${#Wallist[@]} ))
             elif [ $x_switch == 'p' ] ; then
                 nextIndex=$(( i - 1 ))
+            elif [ $x_switch == 'i' ] ; then
+                nextIndex=11
             fi
+
+            echo "${nextIndex}"
 
             Wall_Update "${Wallist[nextIndex]}"
             break
@@ -119,7 +123,8 @@ while getopts "nps" option ; do
         echo "n : set next wall"
         echo "p : set previous wall"
         echo "s : set input wallpaper"
-        exit 1 ;;
+        xtrans="grow"
+        Wall_Change i ;;
     esac
 done
 

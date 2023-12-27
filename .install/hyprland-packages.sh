@@ -27,7 +27,7 @@ packagesPacman=(
     "blueman"
     "papirus-icon-theme"
     "polkit-gnome"
-    "hyprland" 
+   # "hyprland" 
     "xdg-desktop-portal" 
     "xdg-desktop-portal-hyprland" 
     "waybar" 

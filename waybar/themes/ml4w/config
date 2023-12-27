@@ -53,6 +53,7 @@
         "battery", 
         "group/hardware",
         "custom/cliphist",
+        "tray",
         "network",
         "clock",
         "custom/exit"
