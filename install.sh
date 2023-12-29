@@ -49,7 +49,6 @@ source .install/wallpaper.sh
 source .install/disabledm.sh
 source .install/issue.sh
 source .install/restore.sh
-source .install/restore_zsh.sh
 source .install/keyboard.sh
 source .install/copy.sh
 source .install/config-folder.sh
@@ -60,6 +59,8 @@ fi
 if [[ $profile == *"Qtile"* ]]; then
     source .install/qtile-dotfiles.sh
 fi
+source .install/restore_zsh.sh
+source .install/install_pst.sh
 source .install/bashrc.sh
 source .install/monitor.sh
 source .install/done.sh

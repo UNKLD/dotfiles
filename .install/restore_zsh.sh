@@ -10,6 +10,8 @@ if [ $? -ne 0 ] ; then
     exit 1
 fi
 
+myShell="${1:-zsh}"
+
 # set variables
 Zsh_rc="$HOME/.zshrc"
 Zsh_Path="/usr/share/oh-my-zsh"
@@ -33,3 +35,9 @@ done < <(cut -d '#' -f 1 restore_zsh.lst | sed 's/ //g')
 # update plugin array in zshrc
 echo "intalling zsh plugins --> ${w_plugin}"
 sed -i "/^plugins=/c\plugins=($w_plugin)$Fix_Completion" $Zsh_rc
+
+# set shell
+if [ $(grep $USER /etc/passwd | awk -F '/' '{print $NF}') != "${myShell}" ] ; then
+    echo "changing shell to ${myShell}..."
+    chsh -s $(which ${myShell})
+fi
