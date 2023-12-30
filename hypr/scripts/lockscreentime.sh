@@ -1,4 +1,4 @@
-#/bin/sh
+#/bin/bash
 #  ___    _ _      _   _                 
 # |_ _|__| | | ___| |_(_)_ __ ___   ___  
 #  | |/ _` | |/ _ \ __| | '_ ` _ \ / _ \ 
@@ -9,7 +9,7 @@
 # by Stephan Raabe (2023) 
 # ----------------------------------------------------- 
 
-timeswaylock=900
+timeswaylock=600
 timeoff=660
 
 if [ -f "/usr/bin/swayidle" ]; then

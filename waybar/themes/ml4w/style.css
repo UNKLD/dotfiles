@@ -305,20 +305,20 @@ window#waybar.empty #window {
 #network {
   margin-right: 5px;
   margin-top: 4px;
-  margin-bottom: 2px;
-  padding-left: 2px;
+  margin-bottom: 3px;
   padding-right: 10px;
-  border-top-right-radius: 40%;
-  border-bottom-right-radius: 40%;
+  padding-left: 2px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 #tray {
   margin-left: 5px;
   margin-top: 4px;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   padding-right: 2px;
   padding-left: 10px;
-  border-top-left-radius: 45%;
-  border-bottom-left-radius: 45%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 #tray,

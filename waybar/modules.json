@@ -96,6 +96,7 @@
   "custom/waybarthemes": {
     "format": "",
     "on-click": "~/dotfiles/waybar/themeswitcher.sh",
+    "on-click-right": "~/dotfiles/hypr/scripts/swwwallpaper.sh -p",
     "tooltip": false
   },
 
