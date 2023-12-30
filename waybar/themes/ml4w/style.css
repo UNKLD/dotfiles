@@ -274,7 +274,7 @@ window#waybar.empty #window {
   color: @textcolor1;
   border-radius: 15px;
   padding: 1px 10px 0px 10px;
-  margin: 3px 15px 3px 0px;
+  margin: 3px 10px 5px 0px;
   opacity: 0.8;
   border: 3px solid @bordercolor;
 }
@@ -302,6 +302,9 @@ window#waybar.empty #window {
  * Network and tray combined
  * ----------------------------------------------------- */
 
+#custom-cliphist {
+  font-size: 16px;
+}
 #network {
   margin-right: 5px;
   margin-top: 4px;
@@ -312,16 +315,14 @@ window#waybar.empty #window {
   border-bottom-right-radius: 15px;
 }
 #tray {
-  margin-left: 5px;
-  margin-top: 4px;
-  margin-bottom: 3px;
+  /* margin: 5px 5px 3px 5px; */
+  margin-right: 8px;
   padding-right: 2px;
   padding-left: 10px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
 
-#tray,
 #network {
   background-color: @backgroundlight;
   font-size: 16px;
@@ -332,13 +333,11 @@ window#waybar.empty #window {
   opacity: 0.8;
 }
 
-#tray,
 #network.ethernet {
   background-color: @backgroundlight;
   color: @textcolor2;
 }
 
-#tray,
 #network.wifi {
   background-color: @backgroundlight;
   color: @textcolor2;
